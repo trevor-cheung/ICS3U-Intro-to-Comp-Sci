@@ -2,6 +2,7 @@ public class SkyView {
     private double[][] view;
 
     public SkyView(int numRows, int numCols, double[] scanned) {
+        view = new double[numRows][numCols];
         for (int r = 0; r < numRows; r++) {
             for (int c = 0; c < numCols; c++) {
                 if (r % 2 == 1)
